@@ -29,7 +29,7 @@ const Order3 = () => {
           </div>
         </div>
 
-        <div className="container">
+        <div className="container" id="max-ord">
           <div className="row">
             <div className="col-12">
               <div className="order-back-3">
@@ -75,10 +75,7 @@ const Order3 = () => {
                   required
                 />
 
-
-
-
-<div class="d-flex justify-content-between" id="gap-ord1">
+                <div class="d-flex justify-content-between" id="gap-ord1">
                   <div class="flex-fill me-2">
                     <label className="label-ord">Expire Date</label>
 
@@ -102,62 +99,37 @@ const Order3 = () => {
                   </div>
                 </div>
 
-
-<div id="ord-gap">
-
-                <div className="ord-place-btn">
-                  <button className="place-btn">
-                 PLACE ORDER
-
-                    </button>
+                <div id="ord-gap">
+                  <div className="ord-place-btn">
+                    <button className="place-btn">PLACE ORDER</button>
+                  </div>
                 </div>
-                </div>
-
-
-
               </div>
             </div>
           </div>
         </div>
 
-       
-       
-       
-       <div className="container">
-        <div className="row">
+        <div className="container" id="max-ord1">
+          <div className="row">
             <div className="col-12">
-
-                <div className="ord3-sec2">
-
+              <div className="ord3-sec2">
                 <h4 className="h4-add">Additional Information</h4>
-                
- <div className="">
+
+                <div className="">
                   <label className="h6-not">Order Notes (optional)</label>
                 </div>
 
                 <div>
-                  <textarea className="text-area-ord" placeholder="Write here" />
+                  <textarea
+                    className="text-area-ord"
+                    placeholder="Write here"
+                  />
                 </div>
-
-
-
-                </div>
-
-
-
+              </div>
             </div>
-
+          </div>
         </div>
 
-       </div>
-       
-       
-       
-       
-       
-       
-       
-       
         <div className="container" id="footer-res">
           <div className="row">
             <div className="col-lg-3">

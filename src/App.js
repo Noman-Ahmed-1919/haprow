@@ -11,6 +11,8 @@ import Order from "./components/Order";
 import Order2 from "./components/Order2";
 import Order3 from "./components/Order3";
 import Support from "./components/Support";
+import Events from "./components/Events";
+import Blog from "./components/Blog";
 
 function App() {
   return (
@@ -27,6 +29,10 @@ function App() {
 <Route exact path="/order2" element={<Order2 />} />
 <Route exact path="/order3" element={<Order3 />} />
 <Route exact path="/support" element={<Support />} />
+<Route exact path="/event" element={<Events />} />
+<Route exact path="/blog" element={<Blog />} />
+
+
 
 
 

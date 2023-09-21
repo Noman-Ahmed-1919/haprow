@@ -5,6 +5,11 @@ import search from "../images/search.png";
 import pro4 from "../images/roboside.png";
 import supimg1 from "../images/support1.png";
 
+import book1 from "../images/book1.png";
+import book2 from "../images/book2.png";
+import book3 from "../images/book3.png";
+
+
 import logo from "../images/logo.png";
 import insta from "../images/insta.png";
 import linkedin from "../images/linkedin.png";
@@ -47,7 +52,35 @@ const Support = () => {
               <h3 className="h3-what">What are you looking for today?</h3>
            
            
-           
+           <div className="mainsupport-flex">
+
+            <div className="support-book">
+
+              <img src={book1}/>
+
+              <p className="p-user">User Manual (PDF)</p>
+
+            </div>
+
+            <div className="support-book">
+
+<img src={book2}/>
+
+<p className="p-user">User Guide (PDF)</p>
+
+
+</div>
+
+<div className="support-book">
+
+<img src={book3}/>
+
+<p className="p-user">Tim Tim Tutorial</p>
+
+
+</div>
+
+           </div>
            
            
            
@@ -62,7 +95,7 @@ const Support = () => {
         <section id="prosec7">
           <div className="container">
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-6 faq-backks">
                 <h6 className="h6faqs">Faqs</h6>
 
                 <h4 className="h4looking">Looking for Answers?</h4>
@@ -203,7 +236,7 @@ const Support = () => {
 
               <div className="col-md-6">
                 <div className="box-center">
-                  <div className="siderobo">
+                  <div className="siderobo1">
                     <img className="proimg4" src={pro4} />
 
                     <h4 className="h4still">Still Have Questions?</h4>

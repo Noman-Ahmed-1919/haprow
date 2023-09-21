@@ -53,14 +53,14 @@ const Header = () =>{
         <NavLink to="/support" id="abouta3" style={navLinkStyles} className="nav-link " href="#utility">  Support</NavLink>
       </li>
        <li className="nav-item">
-        <NavLink to="/vv" id="abouta4" style={navLinkStyles}  className="nav-link con " href="#u">  Blogs</NavLink>
+        <NavLink to="/blog" id="abouta4" style={navLinkStyles}  className="nav-link con " href="#u">  Blogs</NavLink>
       </li>
       <li className="nav-item">
         <NavLink to="/contact" id="abouta4" style={navLinkStyles}  className="nav-link con " href="#utility">  Contact Us</NavLink>
       </li> 
 
       <li className="nav-item">
-        <NavLink to="/" id="abouta4" style={navLinkStyles}  className="nav-link con " href="#utility">  Events</NavLink>
+        <NavLink to="/event" id="abouta4" style={navLinkStyles}  className="nav-link con " href="#utility">  Events</NavLink>
       </li> 
 
       
