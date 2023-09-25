@@ -146,7 +146,7 @@ background-size: 200% 100%;
 
 #aboutaa {
   font-family: "sansbold";
-  margin-left: 235px;
+  margin-left: 233px;
   border-bottom: 3px solid #222A78;
   color: white;
 }
@@ -350,11 +350,9 @@ padding-top: 80px;
 #sec4{
   /* margin-top: 60px; */
   /* background: radial-gradient(circle at 2% 77%, #ABE4CE, #9AA29F 25%), radial-gradient(circle at 104% 77%, #48C696, #191A1A 0%, #48C696 0%, #191A1A 25%); */
-padding-top: 200px;
 padding-bottom: 60px;
 
 /* background-image: url(./images/workback.webp); */
-height: 940px;
 width: auto;
 background-position: center;
 background-repeat: no-repeat;
@@ -744,9 +742,9 @@ text-align: center;
 
 
 #sec4{
-  background-color: black;
+  /* background-color: black;
   padding-top: 30px;
-  padding-bottom: 100px;
+  padding-bottom: 100px; */
 }
 
 
@@ -2574,7 +2572,7 @@ padding-left: 10px;
   position: relative;
 }
 
-input[type="text"] {
+.search-inp {
   background-color: rgba(48, 48, 48, 1);
   width: 100%;
 
@@ -2899,4 +2897,495 @@ border-radius: 10px;
 .h1-meet{
 color: white;
 margin-bottom: 40px;
+}
+
+
+
+#blog-sec1{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#blog-sec2{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#blog-sec3{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+.flex-heart{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+
+.smline{
+  height: 30px;
+}
+
+.heart{
+  height: 30px;
+}
+
+.message{
+  height: 30px;
+}
+
+#bloog-wi{
+  max-width: 61%;
+}
+
+.three{
+  font-size: 20px;
+}
+.five{
+  font-size: 20px;
+}
+
+.h3-enchancing{
+  color: white;
+  margin-top: 20px;
+}
+
+.p-aaautism{
+  color: white;
+}
+
+.h4-read{
+  color: white;
+}
+
+
+.p-eeevent{
+  color: #FFE425;
+}
+
+.h4-asssist{
+  color: white;
+  font-size: 54px;
+  margin-bottom: 40px;
+}
+
+.arrow-fllex{
+  display: flex;
+
+}
+
+.p-et{
+  color: white;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.blogimg5{
+  height: 25px;
+  /* width: 40px; */
+}
+
+.main-flex-div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bloog-gapp{
+  margin-top: 20px;
+}
+
+.get-flex{
+  display: -webkit-inline-box;
+    margin-top: 40px;
+}
+
+.gett-btnn{
+  padding: 12px 32px;
+  color: white;
+  background-color: rgba(50, 128, 255, 1);
+  border: none;
+  border-radius: 50px;
+}
+
+.ppp-orci{
+  color: white;
+  margin-left: 18px;
+}
+
+.h33-social{
+  color: white;
+  font-size: 32px;
+  margin-top: 30px;
+}
+
+.blogimg4{
+width: 100%;
+margin-top: 20px;
+}
+
+#riggght-r{
+margin-left: 70px;
+}
+
+.ppp-tiim{
+  color: white;
+  margin-top: 20px;
+}
+
+.h4-recent{
+  color: white;
+  margin-top: 30px;
+}
+
+.ppp-understanding{
+  color: white;
+  margin-top: 20px;
+}
+
+.p-add{
+  color: white;
+  margin-top: 20px;
+}
+
+.pp-pro{
+  color: white;
+  margin-top: 20px;
+}
+
+.h4-taggs{
+  color: white;
+  margin-top: 30px;
+}
+
+.pp-rrrobot{
+  color: white;
+  margin-top: 20px;
+}
+
+
+
+
+/* =================== Input field with search image in right start ======================================= */
+
+
+.custom-search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%; /* Adjust the width as needed */
+  border: 1px solid white; /* Add border for styling */
+  border-radius: 50px; /* Add rounded corners if desired */
+  overflow: hidden; /* Hide overflowing content (search icon) */
+  background-color: transparent;
+
+}
+
+/* Style for the input field */
+.custom-search-input {
+  flex: 1; /* Take up remaining space in the container */
+  border: none; /* Remove input field border */
+  padding: 10px; /* Add padding for spacing */
+  outline: none; /* Remove input field outline */
+  background-color: transparent;
+  color: white;
+}
+
+
+/* Style for the search icon */
+.custom-search-icon {
+  width: 30px; /* Adjust the width of the icon as needed */
+  height: 30px; /* Adjust the height of the icon as needed */
+  padding: 5px; /* Add padding for spacing */
+   /* Set the background to transparent */
+  cursor: pointer; /* Add a pointer cursor for interactivity */
+}
+
+/* Add hover effect for the search icon (optional) */
+.custom-search-icon:hover {
+  background-color: #f0f0f0; /* Change the background color on hover */
+}
+
+
+
+/* =================== Input field with search image in right end ======================================= */
+
+
+
+
+
+
+.custom-search-container1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%; /* Adjust the width as needed */
+  border: none; /* Add border for styling */
+  border-radius: 10px; /* Add rounded corners if desired */
+  overflow: hidden; /* Hide overflowing content (search icon) */
+  background-color: rgba(51, 52, 53, 1);
+  color: white;
+margin-top: 30px;
+}
+
+/* Style for the input field */
+.custom-search-input1 {
+  flex: 1; /* Take up remaining space in the container */
+  border: none; /* Remove input field border */
+  padding: 10px; /* Add padding for spacing */
+  outline: none; /* Remove input field outline */
+  background-color: transparent;
+  color: white;
+}
+
+
+/* Style for the search icon */
+.custom-search-icon1 {
+  width: 30px; /* Adjust the width of the icon as needed */
+  height: 30px; /* Adjust the height of the icon as needed */
+  padding: 5px; /* Add padding for spacing */
+   /* Set the background to transparent */
+  cursor: pointer; /* Add a pointer cursor for interactivity */
+}
+
+/* Add hover effect for the search icon (optional) */
+.custom-search-icon1:hover {
+  background-color: #f0f0f0; /* Change the background color on hover */
+}
+
+
+
+
+
+.h4-bblog{
+  color: #0F2043;
+  text-align: center;
+
+}
+
+.pp-expp{
+  color: white;
+  text-align: center;
+}
+
+
+.sli-back-para{
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #0F2043;
+  max-width: 241px;
+  margin-left: 70px;
+  margin-top: -42px;
+  position: absolute;
+
+  z-index: 2;
+
+}
+
+#news-sec5{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+#newssliderimg{
+  position: relative;
+  z-index: 1;
+  
+
+}
+
+.margin-bt{
+  margin-bottom: 5.5rem;
+}
+
+.namename1{
+  color: #0F2245;
+  text-align: center;
+}
+
+
+
+
+@media screen and (min-width: 1200px) and (max-width:1400px) {
+
+
+
+#aboutaa {
+  font-family: "sansbold";
+  margin-left: 163px;
+  border-bottom: 3px solid #222A78;
+  color: white;
+}
+
+#btn1header2 {
+  background-color: #279EFF;
+  color: white;
+  padding: 16px 52px;
+  border-radius: 40px;
+  font-family: "sanssemibold";
+  text-decoration: none;
+  cursor: grab;
+  margin-left: 14px;
+  transition: background-position 0.3s ease;
+  background: linear-gradient(90deg, #279EFF, #FFE425);
+  background-size: 200% 100%;
+}
+}
+
+
+
+@media screen and (min-width: 100px) and (max-width:1200px) {
+
+
+  #strbtnn{
+    margin-top: 54px;
+  }
+
+#abouta1 {
+  font-weight: bold;
+  color: rgb(39, 158, 255);
+  margin-top: 0px;
+}
+
+#btn1header2 {
+  background-color: #279EFF;
+  color: white;
+  padding: 16px 52px;
+  border-radius: 40px;
+  font-family: "sanssemibold";
+  text-decoration: none;
+  cursor: grab;
+  margin-left: 0px;
+  transition: background-position 0.3s ease;
+  background: linear-gradient(90deg, #279EFF, #FFE425);
+  background-size: 200% 100%;
+}
+
+#abouta {
+  font-weight: bold;
+  color: rgb(39, 158, 255);
+  margin-top: 0px;
+}
+#abouta2 {
+  font-weight: bold;
+  color: rgb(39, 158, 255);
+  margin-top: 0px;
+}
+#abouta3 {
+  font-weight: bold;
+  color: rgb(39, 158, 255);
+  margin-top: 0px;
+}
+
+#abouta4 {
+  font-weight: bold;
+  color: rgb(39, 158, 255);
+  margin-top: 0px;
+}
+#aboutaa {
+  font-weight: bold;
+  color: rgb(39, 158, 255);
+  margin-top: 0px;
+}
+#aboutaa {
+  font-family: "sansbold";
+  margin-left: 20px;
+  border-bottom: 3px solid #222A78;
+  color: white;
+}
+}
+
+
+
+
+@media screen and (min-width: 992px) and (max-width:1150px) {
+
+  .top-top {
+    margin-top: -350px;
+}
+
+
+
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  .top-top {
+    margin-top: -300px;
+    text-align: center;
+}
+}
+
+@media screen and (min-width: 556px) and (max-width: 768px) {
+
+  .top-top {
+    margin-top: -250px;
+    text-align: center;
+    font-size: 24px;
+}
+.h1-eevent {
+  color: white;
+  font-size: 24px;
+}
+.p-vivamus {
+  color: white;
+  font-size: 19px;
+  padding-top: 10px;
+}
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 556px) {
+
+  .top-top {
+    margin-top: -200px;
+    text-align: center;
+}
+.h1-eevent {
+  color: white;
+  font-size: 20px;
+}
+.p-vivamus {
+  color: white;
+  font-size: 18px;
+  padding-top: 10px;
+}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 2000px) {
+
+  #event-sec-hide1{
+    background-image: url(../src/images/event1.png);
+  display: none;
+  }
+
+}
+
+
+
+@media screen and (min-width: 100px) and (max-width: 768px) {
+  #event-sec-hide1{
+    background-image: url(../src/images/event1.png);
+    background-size: 100% 100%;;
+
+    background: cover;
+  
+  }
+
+  #event-sec-1{
+    display: none;
+
+  }
+
+  .top-top {
+    margin-top: 41px;
+    text-align: center;
+}
+
 }

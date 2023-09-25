@@ -16,6 +16,9 @@ import insta from "../images/insta.png";
 import linkedin from "../images/linkedin.png";
 import twitter from "../images/twitter.png";
 import youtube from "../images/youtube.png";
+import ffsend from "../images/ffsee.png";
+import Newsslider from './Newsslider';
+
 
 const Home = () => {
   return (
@@ -142,8 +145,23 @@ const Home = () => {
 
           <Slider1 />
 
+{/* ================================================= slider1 code start from here ============================= */}
+
+
+
+
+
+
+{/* ================================================= slider1 code start end here ============================= */}
+
+
           
         </section>
+
+<section id='news-sec5'>
+<Newsslider/>
+
+</section>
 
         {/* <Footer/> */}
 
@@ -194,7 +212,13 @@ const Home = () => {
             <div className="col-lg-3" id="col3">
               <h2>Stay up to date</h2>
 
-              <input className="input" placeholder="Your email address" />
+<div class="custom-search-container1">
+
+<input className="input" class="custom-search-input1" placeholder="Your email address" />
+<img src={ffsend} alt="Search Icon" className="custom-search-icon1" />
+
+
+</div>
             </div>
           </div>
         </div>

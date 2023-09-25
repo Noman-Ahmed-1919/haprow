@@ -22,7 +22,8 @@ const Header = () =>{
       
 <section  id='hide' className='container'>
 
-<nav className="navbar-expand-lg navbar-dark"  >
+<nav className="navbar navbar-expand-xl navbar-dark"  >
+
 
   <a className="navbar-brand" href="#" id="stico" >
     <img id='logo' style={{ marginTop:"30px" }} src={logo} width={135} height={35} className="d-inline-block align-top" alt="" />
@@ -69,12 +70,14 @@ const Header = () =>{
     <div id="btnnns">
 
 
-    <div>
+    <div id="strbtnn">
     <a id="btn1header2"  className=" my-2 my-sm-0" > GET STARTED</a>
     </div>
     
     </div>
   </div>
+
+
 </nav>
 
 </section>

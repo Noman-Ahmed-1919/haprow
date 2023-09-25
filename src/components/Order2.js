@@ -9,6 +9,8 @@ import insta from "../images/insta.png";
 import linkedin from "../images/linkedin.png";
 import twitter from "../images/twitter.png";
 import youtube from "../images/youtube.png";
+import ffsend from "../images/ffsee.png";
+
 
 import imgord1 from "../images/small-tim1.png";
 import imgord2 from "../images/small-tim2.png";
@@ -299,8 +301,13 @@ const Order2 = () => {
             <div className="col-lg-3" id="col3">
               <h2>Stay up to date</h2>
 
-              <input className="input" placeholder="Your email address" />
-            </div>
+              <div class="custom-search-container1">
+
+<input className="input" class="custom-search-input1" placeholder="Your email address" />
+<img src={ffsend} alt="Search Icon" className="custom-search-icon1" />
+
+
+</div>            </div>
           </div>
         </div>
       </section>

@@ -3,23 +3,24 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
+
 import img1 from "../images/img1.png";
 import newicon from "../images/icon.png";
 
-import man1 from "../images/man1.png";
-import man2 from "../images/man2.png";
-import man3 from "../images/man3.png";
-import man4 from "../images/man4.png";
+import boximg1 from "../images/boximg1.png";
+import boximg2 from "../images/boximg2.png";
+import boximg3 from "../images/boximg3.png";
+import boximg4 from "../images/blogimg1.png";
 
 
+const Newsslider = () => {
 
-const Teamslider = () => {
 
     const settingsTestimonial = {
         dots: true,
         infinite: true,
         speed: 100,
-        slidesToShow: 4,
+        slidesToShow: 3,
         arrows: false,
         slidesToScroll: 2,
         autoplay: true, // Enable automatic scrolling
@@ -58,38 +59,38 @@ const Teamslider = () => {
 
       const teamData = [
         {
-          name:"Carmelo Ippolito",
-          designation:"Apes Planet",
+          name:"Creating Streamlined Safeguarding Processes with OneRen",
+          designation:"Read More",
           profile:img1,
-          imageicon:man1,
+          imageicon:boximg1,
 
         },
         {
-          name:"Raza",
-          designation:"Trustvibes",
+          name:"What are your safeguarding responsibilities and how can you manage them?",
+          designation:"Read More",
           profile:img1,
-          imageicon:man2,
+          imageicon:boximg2,
 
         },
         {
-          name:"Lars Fabricus",
-          designation:"CEO & FOUNDER of Roburna Blockchain",
+          name:"Event About TimTim Specs and specialization and how TimTim works",
+          designation:"Read More",
           profile:img1,
-          imageicon:man3,
+          imageicon:boximg3,
 
         },
         {
-          name:"Bjorn Mattens",
-          designation:"Passive Income",
+            name:"What are your safeguarding responsibilities and how can you manage them?",
+            designation:"Read More",
           profile:img1,
-          imageicon:man4,
+          imageicon:boximg1,
 
         },
         {
-          name:"Hassan Shahid",
-          designation:"CEO of Berg Media",
+            name:"What are your safeguarding responsibilities and how can you manage them?",
+            designation:"Read More",
           profile:img1,
-          imageicon:man1,
+          imageicon:boximg2,
         }
       ];
 
@@ -97,20 +98,32 @@ const Teamslider = () => {
   return (
     <>
       
-      <section className='testmonialSec1' id='sec8'>
-        <div className='backteamcolor'>
+<div className='container'>
+    <div className='row'>
+       <div className='col-12'>
 
-\        <div className="effect"></div>
-        <div className="container">
+        <h2 className='h4-bblog'>Blog & News</h2>
+        <p className='pp-expp'>Explore the World of NFT Art with Artify's Blog.</p>
+
+       </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div className="container">
 
      
-            <h4 className='pr secHeading text-center' id='teamour'>Our team</h4>
-            <h1 className='pr secHeading text-center' id='withour'>Meet with our awsome<br></br> team</h1>
-
+         
             <div className="px-3">
                 <Slider {...settingsTestimonial}>
                     {teamData.map((item,key)=>(
-                        <div className=" mb-4 p-3 animatable fadeInUp" key={key}>
+                        <div className="p-3 animatable fadeInUp margin-bt" key={key}>
 
                             <TestCard imageawsome={item.imageicon}  desc={item.description} image={item.profile} name={item.name} desig={item.designation} />
                         </div>
@@ -124,39 +137,35 @@ const Teamslider = () => {
             </div>
         </div>
 
-        </div>
-
-    </section>
-
-
-
-
-
     </>
   )
 }
+
+
+
+
 
 
 const TestCard = ({imageawsome, image,name,desig,desc}) =>{
     return(
         <div className="testCard1">
 
-                          <img className='img-fluid' src={imageawsome} alt="review" />
+                          <img className='img-fluid' id='newssliderimg' src={imageawsome} alt="review" />
 
                           <ReadMore >
             {desc} 
             </ReadMore>
             <div className="profileDiv1">
                 {/* <img className='img-fluid' src={image} alt="review" /> */}
-                <div className='ms-22'>
-                    <div className="namename">{name}</div>
+                <div className='sli-back-para'>
+                    <div className="namename1">{name}</div>
                     <div className="desigdesig">{desig}</div>
                 </div>
             </div>
            
-            {/* <div className="desc">
+            <div className="desc">
             {desc} 
-            </div> */}
+            </div>
         </div>
     )
 }
@@ -168,23 +177,17 @@ const ReadMore = ({ children }) => {
     const toggleReadMore = () => {
       setIsReadMore(!isReadMore);
     };
-    // useEffect(()=>{
-    //     var clientHeight = document.getElementById('desc').clientHeight;
-    //     console.log(clientHeight);
-    //     setboxHeight(clientHeight)
-    // },[])
+    useEffect(()=>{
+        var clientHeight = document.getElementById('desc').clientHeight;
+        console.log(clientHeight);
+        setboxHeight(clientHeight)
+    },[])
 
     return (
         <>
-        {/* <div className={isReadMore ?"desc show5Line":"desc"} id='desc' >
-            {text}
-        </div>
-        <span onClick={toggleReadMore} className="desc cursor-pointer" >
-            {isReadMore  ? "read more" : " show less"}
-        </span> */}
+      
         </>
     );
   };
 
-
-export default Teamslider
+export default Newsslider

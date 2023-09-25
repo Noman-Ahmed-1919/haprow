@@ -13,10 +13,13 @@ export const Slider1 = () => {
   const settingsTestimonial = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 100,
         slidesToShow: 3,
         arrows: false,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
+        autoplay: true, // Enable automatic scrolling
+        // autoplaySpeed: 3000,
+
         responsive: [
           {
             breakpoint: 992,
