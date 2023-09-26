@@ -22,11 +22,11 @@ const Order = () => {
 
         <div className="container">
           <div className="row">
-            <div className="col-md-8" id="order-top">
+            <div className="col-lg-8" id="order-top">
               <img src={orderimg1} className="orderimg1" />
             </div>
 
-            <div className="col-md-4" id="order-top">
+            <div className="col-lg-4" id="order-top">
               <h6 className="h6-robot">Robot</h6>
               <h2 className="h2-tim-tim">Tim Tim Ai Robot</h2>
               <img src={orderimg2} className="orderimg2" />

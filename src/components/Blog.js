@@ -8,8 +8,6 @@ import blogimg4 from "../images/blogimg4.png";
 import blogimg5 from "../images/blogimg5.png";
 import blogimg6 from "../images/blogimg6.png";
 
-
-
 import smline from "../images/smalll.png";
 import heart from "../images/heart.png";
 import message from "../images/message.png";
@@ -20,7 +18,6 @@ import linkedin from "../images/linkedin.png";
 import twitter from "../images/twitter.png";
 import youtube from "../images/youtube.png";
 import ffsend from "../images/ffsee.png";
-
 
 const Blog = () => {
   return (
@@ -35,11 +32,11 @@ const Blog = () => {
                 <img src={blogimg1} className="blog-imgg-1" />
 
                 <div className="flex-heart">
-                  <p style={{ color: "white" }}>Sep 26, 2022</p>
+                  <p className="twentysix" style={{ color: "white" }}>Sep 26, 2022</p>
                   <img src={smline} className="smline" />
-                  <p style={{ color: "white" }}>Autism Support TimTim Robot</p>
+                  <p className="twentysix"  style={{ color: "white" }}>Autism Support TimTim Robot</p>
                   <img src={smline} className="smline" />
-                  <p style={{ color: "white" }}>By soroush norozy</p>
+                  <p className="twentysix"  style={{ color: "white" }}>By soroush norozy</p>
                   <img src={smline} className="smline" />
                   <img src={heart} className="heart" />
                   <p style={{ color: "white" }} className="five">
@@ -69,40 +66,49 @@ const Blog = () => {
               </div>
 
               <div className="col-lg-4" id="riggght-r">
-
-{/* ================= search input with icon code start ==================================== */}
-
-
+                {/* ================= search input with icon code start ==================================== */}
 
                 <div class="custom-search-container">
-  <input type="text" class="custom-search-input" placeholder="Search..."/>
-  <img src={blogimg6} alt="Search Icon" className="custom-search-icon" />
+                  <input
+                    type="text"
+                    class="custom-search-input"
+                    placeholder="Search..."
+                  />
+                  <img
+                    src={blogimg6}
+                    alt="Search Icon"
+                    className="custom-search-icon"
+                  />
+                </div>
 
-</div>
+                {/* ================= search input with icon code end ==================================== */}
 
-{/* ================= search input with icon code end ==================================== */}
+                <h2 className="h33-social">Social Interaction Support</h2>
+                <img className="blogimg4" src={blogimg4} />
 
+                <p className="ppp-tiim">
+                  The TimTim Robot is equipped with facial recognition software
+                  and expressive features, helping users learn to recognize and
+                  interpret emotions.
+                </p>
 
+                <h4 className="h4-recent">Recent post</h4>
 
+                <p className="ppp-understanding">
+                  Understanding Autism Spectrum<br></br> Disorder (ASD)
+                </p>
 
-<h2 className="h33-social">Social Interaction Support</h2>
-<img className="blogimg4" src={blogimg4} />
+                <p className="p-add">
+                  Advantages of Using the TimTim<br></br> Robot
+                </p>
 
+                <p className="pp-pro">
+                  Promising Future for Autism<br></br> Support
+                </p>
 
-<p className="ppp-tiim">The TimTim Robot is equipped with facial recognition software and expressive features, helping users learn to recognize and interpret emotions.</p>
+                <h4 className="h4-taggs">Tags</h4>
 
-
-<h4 className="h4-recent">Recent post</h4>
-
-<p className="ppp-understanding">Understanding Autism Spectrum<br></br> Disorder (ASD)</p>
-
-<p className="p-add">Advantages of Using the TimTim<br></br> Robot</p>
-
-<p className="pp-pro">Promising Future for Autism<br></br> Support</p>
-
-<h4 className="h4-taggs">Tags</h4>
-
-<p className="pp-rrrobot"> Robot    Technologies</p>
+                <p className="pp-rrrobot"> Robot Technologies</p>
               </div>
             </div>
           </div>
@@ -155,186 +161,129 @@ const Blog = () => {
           </section>
         </section>
 
-
-
-
-
-
-
         <section id="blog-sec3">
-
-
-<div className="container">
-  <div className="row">
-    <div className="col-lg-6">
-
-<img src={blogimg3}/>
-    </div>
-
-    <div className="col-lg-6">
-
-<p className="p-eeevent">Event & Launches</p>
-
-<h2 className="h4-asssist">AssistBot Rex & DynamicBot</h2>
-
-<div className="main-flex-div">
-
-
-
-<div>
-<div className="arrow-fllex">
-  <div>
-    <img className="blogimg5" src={blogimg5}/>
-  </div>
-  <div>
-  <p className="p-et">Et eu ornare lorem metus</p>
-
-  </div>
-</div>
-
-<div className="arrow-fllex">
-  <div>
-    <img className="blogimg5" src={blogimg5}/>
-  </div>
-  <div>
-  <p className="p-et">Tellus sit aliquam et et</p>
-
-  </div>
-</div>
-
-<div className="arrow-fllex">
-  <div>
-    <img className="blogimg5" src={blogimg5}/>
-  </div>
-  <div>
-  <p className="p-et">Quis ut vitae volutpat eu sit</p>
-
-  </div>
-</div>
-
-<div className="arrow-fllex">
-  <div>
-    <img className="blogimg5" src={blogimg5}/>
-  </div>
-  <div>
-  <p className="p-et">Semper hendrerit sagittis et</p>
-
-  </div>
-</div>
-
-<div className="arrow-fllex">
-  <div>
-    <img className="blogimg5" src={blogimg5}/>
-  </div>
-  <div>
-  <p className="p-et">Placerat vulputate mollis</p>
-
-  </div>
-</div>
-</div>
-
-
-
-<div>
-
-<div className="arrow-fllex">
-  <div>
-    <img className="blogimg5" src={blogimg5}/>
-  </div>
-  <div>
-  <p className="p-et">Et eu ornare lorem metus</p>
-
-  </div>
-</div>
-
-<div className="arrow-fllex">
-  <div>
-    <img className="blogimg5" src={blogimg5}/>
-  </div>
-  <div>
-  <p className="p-et">Tellus sit aliquam et et</p>
-
-  </div>
-</div>
-
-<div className="arrow-fllex">
-  <div>
-    <img className="blogimg5" src={blogimg5}/>
-  </div>
-  <div>
-  <p className="p-et">Quis ut vitae volutpat eu sit</p>
-
-  </div>
-</div>
-
-<div className="arrow-fllex">
-  <div>
-    <img className="blogimg5" src={blogimg5}/>
-  </div>
-  <div>
-  <p className="p-et">Semper hendrerit sagittis et</p>
-
-  </div>
-</div>
-
-<div className="arrow-fllex">
-  <div>
-    <img className="blogimg5" src={blogimg5}/>
-  </div>
-  <div>
-  <p className="p-et">Placerat vulputate mollis</p>
-
-  </div>
-</div>
-</div>
-
-
-
-
-</div>
-
-
-<div className="bloog-gapp"></div>
-<div className="colored-underline"> </div>
-
-<div className="get-flex">
-
-  <button className="gett-btnn">GET IN TOUCH</button>
-
-<p className="ppp-orci">Orci lorem lectus augue aliquet euismod cras<br></br> ac donec vestibulum. Lectus convallis.</p>
-
-</div>
-
-
-
-
-
-
-    </div>
-
-  </div>
-
-</div>
-
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6">
+                <img src={blogimg3} className="blogimg3" />
+              </div>
+
+              <div className="col-lg-6">
+                <p className="p-eeevent">Event & Launches</p>
+
+                <h2 className="h4-asssist">AssistBot Rex & DynamicBot</h2>
+
+                <div className="main-flex-div">
+                  <div>
+                    <div className="arrow-fllex">
+                      <div>
+                        <img className="blogimg5" src={blogimg5} />
+                      </div>
+                      <div>
+                        <p className="p-et">Et eu ornare lorem metus</p>
+                      </div>
+                    </div>
+
+                    <div className="arrow-fllex">
+                      <div>
+                        <img className="blogimg5" src={blogimg5} />
+                      </div>
+                      <div>
+                        <p className="p-et">Tellus sit aliquam et et</p>
+                      </div>
+                    </div>
+
+                    <div className="arrow-fllex">
+                      <div>
+                        <img className="blogimg5" src={blogimg5} />
+                      </div>
+                      <div>
+                        <p className="p-et">Quis ut vitae volutpat eu sit</p>
+                      </div>
+                    </div>
+
+                    <div className="arrow-fllex">
+                      <div>
+                        <img className="blogimg5" src={blogimg5} />
+                      </div>
+                      <div>
+                        <p className="p-et">Semper hendrerit sagittis et</p>
+                      </div>
+                    </div>
+
+                    <div className="arrow-fllex">
+                      <div>
+                        <img className="blogimg5" src={blogimg5} />
+                      </div>
+                      <div>
+                        <p className="p-et">Placerat vulputate mollis</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="arrow-fllex">
+                      <div>
+                        <img className="blogimg5" src={blogimg5} />
+                      </div>
+                      <div>
+                        <p className="p-et">Et eu ornare lorem metus</p>
+                      </div>
+                    </div>
+
+                    <div className="arrow-fllex">
+                      <div>
+                        <img className="blogimg5" src={blogimg5} />
+                      </div>
+                      <div>
+                        <p className="p-et">Tellus sit aliquam et et</p>
+                      </div>
+                    </div>
+
+                    <div className="arrow-fllex">
+                      <div>
+                        <img className="blogimg5" src={blogimg5} />
+                      </div>
+                      <div>
+                        <p className="p-et">Quis ut vitae volutpat eu sit</p>
+                      </div>
+                    </div>
+
+                    <div className="arrow-fllex">
+                      <div>
+                        <img className="blogimg5" src={blogimg5} />
+                      </div>
+                      <div>
+                        <p className="p-et">Semper hendrerit sagittis et</p>
+                      </div>
+                    </div>
+
+                    <div className="arrow-fllex">
+                      <div>
+                        <img className="blogimg5" src={blogimg5} />
+                      </div>
+                      <div>
+                        <p className="p-et">Placerat vulputate mollis</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bloog-gapp"></div>
+                <div className="colored-underline"> </div>
+
+                <div className="get-flex">
+                  <button className="gett-btnn">GET IN TOUCH</button>
+
+                  <p className="ppp-orci">
+                    Orci lorem lectus augue aliquet euismod cras<br></br> ac
+                    donec vestibulum. Lectus convallis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* ==================================== Footer ================================ */}
 
@@ -384,14 +333,19 @@ const Blog = () => {
 
             <div className="col-lg-3" id="col3">
               <h2>Stay up to date</h2>
-
               <div class="custom-search-container1">
-
-<input className="input" class="custom-search-input1" placeholder="Your email address" />
-<img src={ffsend} alt="Search Icon" className="custom-search-icon1" />
-
-
-</div>            </div>
+                <input
+                  className="input"
+                  class="custom-search-input1"
+                  placeholder="Your email address"
+                />
+                <img
+                  src={ffsend}
+                  alt="Search Icon"
+                  className="custom-search-icon1"
+                />
+              </div>{" "}
+            </div>
           </div>
         </div>
       </section>

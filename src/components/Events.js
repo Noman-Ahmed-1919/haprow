@@ -190,7 +190,7 @@ const Events = () => {
 
 
 
-<div className="container-fluid">
+<div className="container-fluid" id="zereach">
         <div className="row">
           <div className="col-12" style={{ padding: "0px" }}>
             <div className="mainVideo" style={{}}>
@@ -200,7 +200,7 @@ const Events = () => {
                    
 
                    
-                   <img src={eventimg8}/>
+                   <img  src={eventimg8}/>
 <img src={eventimg9}/>   
 
                     
@@ -228,14 +228,14 @@ const Events = () => {
 
 <div className="container">
     <div className="row">
-        <div className="col-md-6">
+        <div className="col-lg-6">
 
             <h1 className="h1-last">Last Event Gallery</h1>
 
         </div>
 
 
-        <div className="col-md-6">
+        <div className="col-lg-6">
 
 <p className="eventpara-last">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 </div>

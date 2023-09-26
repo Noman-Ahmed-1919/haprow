@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect  } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -13,20 +13,48 @@ const Teamslider1 = () => {
 
 
     const [currentSlide, setCurrentSlide] = useState(0);
+    const [slidesToShow, setSlidesToShow] = useState(4); 
 
 
     const settings = {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToShow: slidesToShow,     
+         slidesToScroll: 1,
         initialSlide: currentSlide, // Set the initial slide
 
       };
 
 
       const sliderRef = React.createRef();
+
+      useEffect(() => {
+        // Update the number of slides to show based on the screen width
+        const handleResize = () => {
+          const screenWidth = window.innerWidth;
+          if (screenWidth >= 992) {
+            setSlidesToShow(4);
+          } else if (screenWidth >= 768) {
+            setSlidesToShow(3);
+          } else if (screenWidth >= 556) {
+            setSlidesToShow(2);
+          } else if (screenWidth  <= 556) {
+            setSlidesToShow(1);
+          } else {
+            setSlidesToShow(1);
+          }
+        };
+
+         // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Call initially to set the correct number of slides
+
+    return () => {
+      // Remove the event listener when component unmounts
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
       const handleNextSlide = () => {
         if (currentSlide < 3) {

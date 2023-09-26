@@ -9,14 +9,12 @@ import book1 from "../images/book1.png";
 import book2 from "../images/book2.png";
 import book3 from "../images/book3.png";
 
-
 import logo from "../images/logo.png";
 import insta from "../images/insta.png";
 import linkedin from "../images/linkedin.png";
 import twitter from "../images/twitter.png";
 import youtube from "../images/youtube.png";
 import ffsend from "../images/ffsee.png";
-
 
 const Support = () => {
   return (
@@ -51,44 +49,28 @@ const Support = () => {
 
         <div className="container">
           <div className="row">
-            <div className="col-12">
+            <div className="col-lg-12">
               <h3 className="h3-what">What are you looking for today?</h3>
-           
-           
-           <div className="mainsupport-flex">
 
-            <div className="support-book">
+              <div className="mainsupport-flex">
+                <div className="support-book">
+                  <img src={book1} />
 
-              <img src={book1}/>
+                  <p className="p-user">User Manual (PDF)</p>
+                </div>
 
-              <p className="p-user">User Manual (PDF)</p>
+                <div className="support-book">
+                  <img src={book2} />
 
-            </div>
+                  <p className="p-user">User Guide (PDF)</p>
+                </div>
 
-            <div className="support-book">
+                <div className="support-book">
+                  <img src={book3} />
 
-<img src={book2}/>
-
-<p className="p-user">User Guide (PDF)</p>
-
-
-</div>
-
-<div className="support-book">
-
-<img src={book3}/>
-
-<p className="p-user">Tim Tim Tutorial</p>
-
-
-</div>
-
-           </div>
-           
-           
-           
-           
-           
+                  <p className="p-user">Tim Tim Tutorial</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -98,7 +80,7 @@ const Support = () => {
         <section id="prosec7">
           <div className="container">
             <div className="row">
-              <div className="col-md-6 faq-backks">
+              <div className="col-lg-6 faq-backks">
                 <h6 className="h6faqs">Faqs</h6>
 
                 <h4 className="h4looking">Looking for Answers?</h4>
@@ -237,7 +219,7 @@ const Support = () => {
                 </div>
               </div>
 
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <div className="box-center">
                   <div className="siderobo1">
                     <img className="proimg4" src={pro4} />
@@ -355,14 +337,19 @@ const Support = () => {
 
             <div className="col-lg-3" id="col3">
               <h2>Stay up to date</h2>
-
               <div class="custom-search-container1">
-
-<input className="input" class="custom-search-input1" placeholder="Your email address" />
-<img src={ffsend} alt="Search Icon" className="custom-search-icon1" />
-
-
-</div>            </div>
+                <input
+                  className="input"
+                  class="custom-search-input1"
+                  placeholder="Your email address"
+                />
+                <img
+                  src={ffsend}
+                  alt="Search Icon"
+                  className="custom-search-icon1"
+                />
+              </div>{" "}
+            </div>
           </div>
         </div>
       </section>

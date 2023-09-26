@@ -11,7 +11,6 @@ import twitter from "../images/twitter.png";
 import youtube from "../images/youtube.png";
 import ffsend from "../images/ffsee.png";
 
-
 import { Modal, Button } from "react-bootstrap";
 
 import aboutimg1 from "../images/aboutauto.png";
@@ -58,7 +57,10 @@ const Products = () => {
                   review an negotiating a content itself and the<br></br> design
                   inevitable argumentation.
                 </p>
+                <div className="probtn">
                 <button className="btnpro1">LEARN MORE</button>
+
+                </div>
               </div>
 
               <div className="col-md-6" style={{ padding: "0px" }}>
@@ -70,7 +72,7 @@ const Products = () => {
           <section id="prosec3">
             <div className="container">
               <div className="row">
-                <div className="col-md-4">
+                <div className="col-lg-4">
                   {/* <div id="flex-all"> */}
 
                   <div className="autoback">
@@ -94,7 +96,7 @@ const Products = () => {
                   </div>
                 </div>
 
-                <div className="col-md-4">
+                <div className="col-lg-4">
                   <div className="autoback">
                     <div className="aboutautomate">
                       <div>
@@ -116,7 +118,7 @@ const Products = () => {
                   </div>
                 </div>
 
-                <div className="col-md-4">
+                <div className="col-lg-4">
                   <div className="autoback">
                     <div className="aboutautomate">
                       <div>
@@ -154,12 +156,12 @@ const Products = () => {
                   </p>
                 </div>
 
-                <div className="col-md-6">
-                  <img src={pro2} />
+                <div className="col-lg-6">
+                  <img className="pro222" src={pro2} />
                 </div>
 
-                <div className="col-md-6" id="iconpro">
-                  <div style={{ display: "flex" }}>
+                <div className="col-lg-6" id="iconpro">
+                  <div className="checkmate" >
                     <div>
                       <img src={pro3} />
                     </div>
@@ -169,7 +171,7 @@ const Products = () => {
                     </div>
                   </div>
 
-                  <div style={{ display: "flex" }}>
+                  <div className="checkmate" >
                     <div className="pro3icon">
                       <img src={pro3} />
                     </div>
@@ -179,7 +181,7 @@ const Products = () => {
                     </div>
                   </div>
 
-                  <div style={{ display: "flex" }}>
+                  <div className="checkmate" >
                     <div className="pro3icon">
                       <img src={pro3} />
                     </div>
@@ -189,13 +191,13 @@ const Products = () => {
                     </div>
                   </div>
 
-                  <div style={{ display: "flex" }}>
+                  <div className="checkmate" >
                     <div className="pro3icon">
                       <img src={pro3} />
                     </div>
 
                     <div>
-                      <h4 className="h4light">Plug and Play</h4>
+                      <h4 className="h4light">Lightweight A1 grade frame</h4>
                     </div>
                   </div>
                 </div>
@@ -214,15 +216,15 @@ const Products = () => {
                   </p>
                 </div>
 
-                <div className="col-md-6" id="gallerysec1">
+                <div className="col-lg-6" id="gallerysec1">
                   <img className="gallery1" src={gallery1} />
                 </div>
 
-                <div className="col-md-6" id="gallerysec1">
+                <div className="col-lg-6" id="gallerysec1">
                   <img className="gallery2" src={gallery2} />
                 </div>
 
-                <div className="col-md-6" id="gallerysec11">
+                <div className="col-lg-6" id="gallerysec11">
                   <div style={{ textAlign: "center" }}>
                     <button className="probtn2">Battery Images</button>
                   </div>
@@ -236,7 +238,7 @@ const Products = () => {
                   </div>
                 </div>
 
-                <div className="col-md-6" id="gallerysec11">
+                <div className="col-lg-6" id="gallerysec11">
                   <img className="gallery3" src={gallery3} />
                 </div>
               </div>
@@ -244,9 +246,9 @@ const Products = () => {
           </section>
 
           <section id="prosec6">
-            <div className="container-fluid">
+            <div className="container-fluid" id="videofix">
               <div className="row">
-                <div className="col-12">
+                <div className="col-12" id="fixxvid">
                   <img style={{ width: "100%" }} src={video} />
                 </div>
               </div>
@@ -256,7 +258,7 @@ const Products = () => {
           <section id="prosec7">
             <div className="container">
               <div className="row">
-                <div className="col-md-6">
+                <div className="col-lg-6">
                   <h6 className="h6faqs">Faqs</h6>
 
                   <h4 className="h4looking">Looking for Answers?</h4>
@@ -399,7 +401,7 @@ const Products = () => {
                   </div>
                 </div>
 
-                <div className="col-md-6">
+                <div className="col-lg-6">
                   <div className="box-center">
                     <div className="siderobo">
                       <img className="proimg4" src={pro4} />
@@ -465,14 +467,19 @@ const Products = () => {
 
               <div className="col-md-3" id="col3">
                 <h2>Stay up to date</h2>
-
                 <div class="custom-search-container1">
-
-<input className="input" class="custom-search-input1" placeholder="Your email address" />
-<img src={ffsend} alt="Search Icon" className="custom-search-icon1" />
-
-
-</div>              </div>
+                  <input
+                    className="input"
+                    class="custom-search-input1"
+                    placeholder="Your email address"
+                  />
+                  <img
+                    src={ffsend}
+                    alt="Search Icon"
+                    className="custom-search-icon1"
+                  />
+                </div>{" "}
+              </div>
             </div>
           </div>
         </div>
