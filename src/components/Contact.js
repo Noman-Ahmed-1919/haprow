@@ -169,9 +169,9 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="container" id="footer-res">
+        <div className="container" id='footer-res'>
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-sm-6">
               <img id="logo" src={logo} width={135} height={35} alt="" />
 
               <p className="copy">Copyright © 2023 Haprow.</p>
@@ -179,14 +179,14 @@ const Contact = () => {
 
               <div className="social">
                 <img src={insta} />
-                <img src={twitter} style={{ marginLeft: "15px" }} />
-                <img src={youtube} style={{ marginLeft: "15px" }} />
-                <img src={linkedin} style={{ marginLeft: "15px" }} />
+                <img src={twitter} id='twitterr'/>
+                <img src={youtube} id='twitterr'/>
+                <img src={linkedin} id='twitterr' />
               </div>
             </div>
 
-            <div className="col-lg-2" id="col1">
-              <h2>Company</h2>
+            <div className="col-lg-2 col-sm-6" id="col1">
+              <h2 className='com11'>Company</h2>
 
               <p style={{ marginTop: "30px" }}>About us</p>
               <p>Blog</p>
@@ -195,8 +195,8 @@ const Contact = () => {
               <p>Testimonials</p>
             </div>
 
-            <div className="col-lg-2" id="col2">
-              <h2>Resources</h2>
+            <div className="col-lg-2 col-sm-6" id="col2">
+              <h2 className='res11'>Resources</h2>
 
               <p style={{ marginTop: "30px" }}>Case Studies</p>
               <p>Webinars</p>
@@ -204,8 +204,8 @@ const Contact = () => {
               <p>Documentation</p>
             </div>
 
-            <div className="col-lg-2" id="col3">
-              <h2>Support</h2>
+            <div className="col-lg-2 col-sm-6" id="col3">
+              <h2 className='supp11'>Support</h2>
 
               <p style={{ marginTop: "30px" }}>Help center</p>
               <p>Terms of service</p>
@@ -213,16 +213,17 @@ const Contact = () => {
               <p>Privacy policy</p>
             </div>
 
-            <div className="col-lg-3" id="col3">
-              <h2>Stay up to date</h2>
+            <div className="col-lg-3 col-sm-6" id="col31">
+              <h2 className='stay11'>Stay up to date</h2>
 
-              <div class="custom-search-container1">
+<div class="custom-search-container1">
 
 <input className="input" class="custom-search-input1" placeholder="Your email address" />
 <img src={ffsend} alt="Search Icon" className="custom-search-icon1" />
 
 
-</div>            </div>
+</div>
+            </div>
           </div>
         </div>
       </section>

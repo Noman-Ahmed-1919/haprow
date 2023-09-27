@@ -1,4 +1,7 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+import ReactDOM from 'react-dom'
+import $ from 'jquery';
+
 import Header from "./Header";
 import aboutimg1 from "../images/aboutauto.png";
 import aboutimg2 from "../images/aboutvector.png";
@@ -21,6 +24,125 @@ import Footer from "./Footer";
 import Teamslider from "./Teamslider";
 
 const About = () => {
+
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+},[])
+
+
+var [project,setproject] =useState(+ 0)
+var [customer,setcustomer] =useState(+ 0)
+var [developer,setdeveloper] =useState(+ 0)
+var [clientCount,setClientCount] =useState(+ 0)
+
+
+useEffect(()=>{
+    // Projects()
+    
+    CounterAnimate()
+   },[])
+
+   function CounterAnimate() {
+            
+    // Function which adds the 'animated' class to any '.animatable' in view
+    var doAnimations = function() {
+    "use strict";
+      
+        // Calc current offset and get all animatables
+        var offset = $(window).scrollTop() + $(window).height(),
+            $counterSec = $('.counterSec');
+        
+        // Unbind scroll handler if we have no counterSec
+        if ($counterSec.length == 0) {
+          $(window).off('scroll', doAnimations);
+        }
+        
+        // Check all counterSec and animate them if necessary
+            $counterSec.each(function(i) {
+           var $counterS = $(this);
+                if (($counterS.offset().top + $counterS.height() - 100) < offset) {
+                $counterS.removeClass('counterSec').addClass('counterOn');
+                console.log(offset);
+                handleCounter()
+                handleCustomersData()
+                }
+                 
+        });
+    
+        };
+      
+      // Hook doAnimations on scroll, and trigger a scroll
+        $(window).on('scroll', doAnimations);
+      $(window).trigger('scroll');
+  
+  }
+
+
+  
+  const handleCounter =() =>{
+       
+      
+    var startproject=project
+    var endproject= + 15;
+    var startCustomer=customer
+    var endCustomer= + 1800;
+    var startDeveloper=developer
+    var endDeveloper= + 3500;
+    var startClient=clientCount
+    var endClient= 98 ;
+
+    var projectCounting = setInterval(function(){
+        if(startproject < endproject) {
+            startproject++
+        } else {
+            clearInterval(projectCounting)
+        }
+        console.log(startproject);
+        setproject(startproject)
+    }, 100);
+
+    var developerCounting = setInterval(function(){
+        if(startDeveloper < endDeveloper) {
+          startDeveloper++
+        } else {
+            clearInterval(developerCounting)
+        }
+        console.log(startDeveloper);
+        setdeveloper(startDeveloper)
+    }, 1);
+
+    var clientCounting = setInterval(function(){
+        if(startClient < endClient) {
+          startClient++
+        } else {
+            clearInterval(clientCounting)
+        }
+        console.log(startClient);
+        setClientCount(startClient)
+    }, 100);
+  }
+
+
+
+
+  const handleCustomersData =() =>{
+    var startCustomer=customer
+    var endCustomer= 1800;
+
+    var customerCounting = setInterval(function(){
+      if(startCustomer < endCustomer) {
+        startCustomer++
+      } else {
+          clearInterval(customerCounting)
+      }
+      console.log(startCustomer);
+      setcustomer(startCustomer)
+  }, 5);
+  }
+
+
+
   return (
     <>
 
@@ -267,7 +389,7 @@ const About = () => {
 
               <div className="col-lg-3 col-md-6">
                 <div className="seccpro">
-                  <h1 className="k">1k +</h1>
+                  <h1 className="k">{project} +</h1>
                   <p className="succp">Success Projects</p>
                 </div>
               </div>
@@ -275,7 +397,7 @@ const About = () => {
 
               <div className="col-lg-3 col-md-6" id="set-gape01">
                 <div className="seccpro1">
-                  <h1 className="k">54 +</h1>
+                  <h1 className="k">{customer} +</h1>
                   <p className="succp">Expert Team</p>
                 </div>
               </div>
@@ -284,7 +406,7 @@ const About = () => {
 
               <div className="col-lg-3 col-md-6" id="set-gape">
                 <div className="seccpro">
-                  <h1 className="k">36k +</h1>
+                  <h1 className="k">{clientCount} +</h1>
                   <p className="succp">Satisfied Clients</p>
                 </div>
               </div>
@@ -292,7 +414,7 @@ const About = () => {
 
               <div className="col-lg-3 col-md-6" id="set-gape">
                 <div className="seccpro">
-                  <h1 className="k">15 +</h1>
+                  <h1 className="k">{developer } +</h1>
                   <p className="succp">Awards Wining</p>
                 </div>
               </div>
@@ -308,7 +430,7 @@ const About = () => {
         {/* <Footer /> */}
         <div className="container" id='footer-res'>
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-sm-6">
               <img id="logo" src={logo} width={135} height={35} alt="" />
 
               <p className="copy">Copyright © 2023 Haprow.</p>
@@ -316,14 +438,14 @@ const About = () => {
 
               <div className="social">
                 <img src={insta} />
-                <img src={twitter} style={{ marginLeft: "15px" }} />
-                <img src={youtube} style={{ marginLeft: "15px" }} />
-                <img src={linkedin} style={{ marginLeft: "15px" }} />
+                <img src={twitter} id='twitterr'/>
+                <img src={youtube} id='twitterr'/>
+                <img src={linkedin} id='twitterr' />
               </div>
             </div>
 
-            <div className="col-lg-2" id="col1">
-              <h2>Company</h2>
+            <div className="col-lg-2 col-sm-6" id="col1">
+              <h2 className='com11'>Company</h2>
 
               <p style={{ marginTop: "30px" }}>About us</p>
               <p>Blog</p>
@@ -332,8 +454,8 @@ const About = () => {
               <p>Testimonials</p>
             </div>
 
-            <div className="col-lg-2" id="col2">
-              <h2>Resources</h2>
+            <div className="col-lg-2 col-sm-6" id="col2">
+              <h2 className='res11'>Resources</h2>
 
               <p style={{ marginTop: "30px" }}>Case Studies</p>
               <p>Webinars</p>
@@ -341,8 +463,8 @@ const About = () => {
               <p>Documentation</p>
             </div>
 
-            <div className="col-lg-2" id="col3">
-              <h2>Support</h2>
+            <div className="col-lg-2 col-sm-6" id="col3">
+              <h2 className='supp11'>Support</h2>
 
               <p style={{ marginTop: "30px" }}>Help center</p>
               <p>Terms of service</p>
@@ -350,16 +472,17 @@ const About = () => {
               <p>Privacy policy</p>
             </div>
 
-            <div className="col-lg-3" id="col3">
-              <h2>Stay up to date</h2>
+            <div className="col-lg-3 col-sm-6" id="col31">
+              <h2 className='stay11'>Stay up to date</h2>
 
-              <div class="custom-search-container1">
+<div class="custom-search-container1">
 
 <input className="input" class="custom-search-input1" placeholder="Your email address" />
 <img src={ffsend} alt="Search Icon" className="custom-search-icon1" />
 
 
-</div>            </div>
+</div>
+            </div>
           </div>
         </div>
       </section>

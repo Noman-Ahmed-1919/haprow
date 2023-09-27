@@ -114,7 +114,7 @@ padding-top: 30px;
   font-family: "sanssemibold";
   text-decoration: none;
   cursor: grab;
-margin-left: 125px;
+margin-left: 100px;
 transition: background-position 0.3s ease;
 background: linear-gradient(90deg, #279EFF, #FFE425);
 background-size: 200% 100%;
@@ -4638,8 +4638,6 @@ display: none;  }
   margin-bottom: 30px;
 }
 }
-
-
 
 
 
