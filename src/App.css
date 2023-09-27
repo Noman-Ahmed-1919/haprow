@@ -123,6 +123,7 @@ background-size: 200% 100%;
 #btn1header2:hover{
 
   background-position: -100% 0;
+  /* background-position: -100% 0; */
 
 
 }
