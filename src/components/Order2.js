@@ -38,7 +38,7 @@ const Order2 = () => {
                 <div>
                   <label className="label-ord">User name</label>
                 </div>
-                <div className="d-flex">
+                <div className="flexxx-inpp">
                   <div className="flex-fill">
                     <input
                       className="ord-inp1"
@@ -50,7 +50,7 @@ const Order2 = () => {
 
                   <div className="flex-fill mx-2">
                     <input
-                      className="ord-inp2"
+                      className="ord-inp21"
                       type="text"
                       placeholder="Last name"
                       required
@@ -68,7 +68,7 @@ const Order2 = () => {
                   required
                 />
 
-                <div class="d-flex">
+                <div class="flexxx-inpp1">
                   <div class="mb-3 mx-2">
                     <label for="inputField1" className="inp-coun">
                       Country

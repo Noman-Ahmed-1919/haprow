@@ -37,7 +37,7 @@ const Order3 = () => {
               <div className="order-back-3">
                 <h4 className="h4-payyment">Payment Options</h4>
 
-                <div class="d-flex justify-content-evenly" id="bac-orde-3">
+                <div class="flexxx-ord33" id="bac-orde-3">
                   <img src={pay1} />
 
                   <img src={line} />

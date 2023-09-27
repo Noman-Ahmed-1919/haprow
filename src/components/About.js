@@ -48,7 +48,7 @@ const About = () => {
 
         <div className="container" id="aboutsec2">
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-lg-4">
               {/* <div id="flex-all"> */}
 
               <div className="autoback">
@@ -71,7 +71,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="col-md-4">
+            <div className="col-lg-4">
               <div className="autoback">
                 <div className="aboutautomate">
                   <div>
@@ -92,7 +92,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="col-md-4">
+            <div className="col-lg-4">
               <div className="autoback">
                 <div className="aboutautomate">
                   <div>
@@ -132,11 +132,11 @@ const About = () => {
 
           <div className="container">
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <img className="aboutimg4" src={aboutimg4} />
               </div>
 
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <h4 className="h4our">Our Vision</h4>
 
                 <div className="colored-underline"> </div>
@@ -210,13 +210,13 @@ const About = () => {
         <section id="aboutsec4">
           <div className="container">
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <h6 className="journey">JOURNEY</h6>
                 <h4 className="ways">Ways We Can Help</h4>
 
                 <div className="about-flex1">
                   <div>
-                    <img src={aboutimg6} />
+                    <img className="aboutimg6" src={aboutimg6} />
                   </div>
 
                   <div>
@@ -239,7 +239,7 @@ const About = () => {
                 </div>
 
                 <div className="dic-flex">
-                  <div>
+                  <div className="cebbbtt">
                     <button className="discover-button">DISCOVER MORE</button>
                   </div>
 
@@ -252,7 +252,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="col-md-6" id="colimg">
+              <div className="col-lg-6" id="colimg">
                 <img className="aboutimg7" src={aboutimg7} />
               </div>
             </div>
@@ -263,8 +263,9 @@ const About = () => {
           <div className="container">
             <div className="row">
              
-             
-              <div className="col-md-3">
+             {/* <div className="col-lg-6"> */}
+
+              <div className="col-lg-3 col-md-6">
                 <div className="seccpro">
                   <h1 className="k">1k +</h1>
                   <p className="succp">Success Projects</p>
@@ -272,15 +273,16 @@ const About = () => {
               </div>
 
 
-              <div className="col-md-3">
+              <div className="col-lg-3 col-md-6" id="set-gape01">
                 <div className="seccpro1">
                   <h1 className="k">54 +</h1>
                   <p className="succp">Expert Team</p>
                 </div>
               </div>
+              {/* </div> */}
 
 
-              <div className="col-md-3">
+              <div className="col-lg-3 col-md-6" id="set-gape">
                 <div className="seccpro">
                   <h1 className="k">36k +</h1>
                   <p className="succp">Satisfied Clients</p>
@@ -288,7 +290,7 @@ const About = () => {
               </div>
 
 
-              <div className="col-md-3">
+              <div className="col-lg-3 col-md-6" id="set-gape">
                 <div className="seccpro">
                   <h1 className="k">15 +</h1>
                   <p className="succp">Awards Wining</p>
